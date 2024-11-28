@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div>
+        <!-- gridの設定 -->
+        <h1>ヨコ✖︎タテのセル数を入力</h1>
+        <div class="config">
+            <p>ヨコ</p>
+            <input type="number" value="2" id="grid_column" min="2" max="5">
+            <p>タテ</p>
+            <input type="number" value="2" id="grid_row" min="2" max="5">
+            <p><button id="grid_setting">SETTING</button></p>
+        </div>
+        <!-- ページの更新 -->
+        <h1>黒板を消す</h1>
+        <div class="config">
+            <p><button id="restart">RESTART</button></p>
+        </div>
+
+        <!-- データの保存 -->
+        <h1>黒板を保存する</h1>
+        <div class="config">
+            <button id="item_save">SAVE</button>
+        </div>
+        <!-- 格納したsavedataの読み込みボタン -->
+        <h1>黒板を読み込む</h1>
+        <div class="config">
+            <button id="item_load">TITLE_LOAD</button>
+        </div>
+        <!-- 読み込んだtitleの選択 -->
+        <h1>読み取りファイル選択</h1>
+        <div class="config">
+            <label for="load_title"></label>
+            <select name="" id="select_title">
+            </select>
+            <button id="data_load">黒板_LOAD</button>
+        </div>
+<!-- dragitmeの選択 -->
+        <div class="outer_dragitem">
+            <div class="dragitem" id="drag01">
+                <img src="/img/flow04.png" alt="">
+
+            </div>
+            <div class="dragitem" id="drag02">
+                <img src="/img/flow_squre.png" alt="">
+            </div>
+            <div class="dragitem" id="drag03">
+                <img src="/img/flow_down.png" alt="">
+            </div>
+            <div class="dragitem" id="drag04">
+                <img src="/img/human01.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <h1>黒板にかく
+    </h1>
+    <label for="data_title">黒板タイトル</label>
+    <input type="text" class="title_label" name="" id="data_title">
+
+    <!-- loadによりDOM要素が書き換えられる領域 -->
+    <div class="outer_wrap">
+        <div class="inner_wrap drop_area" id="num01">
+        </div>
+        <div class="inner_wrap drop_area">
+        </div>
+        <div class="inner_wrap drop_area">
+        </div>
+        <div class="inner_wrap drop_area">
+        </div>
+        <div class="inner_wrap drop_area">
+        </div>
+        <div class="inner_wrap drop_area">
+        </div>
+        <div class="inner_wrap drop_area">
+        </div>
+        <div class="inner_wrap drop_area">
+        </div>
+        <div class="inner_wrap drop_area">
+        </div>
+        <div class="inner_wrap drop_area">
+        </div>
+        <div class="inner_wrap drop_area">
+        </div>
+        <div class="inner_wrap drop_area">
+        </div>
+        <div class="inner_wrap drop_area">
+        </div>
+        <div class="inner_wrap drop_area">
+        </div>
+        <div class="inner_wrap drop_area">
+        </div>
+        <div class="inner_wrap drop_area">
+        </div>
+
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="/set.js" type="module"></script>
+</body>
+
+</html>
